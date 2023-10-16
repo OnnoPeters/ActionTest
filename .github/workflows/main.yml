@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: CompositeAction
-        uses: OnnoPeters/CompositeAction@v1
+        uses: OnnoPeters/CompositeAction@v4
         with:
           python_version: '3.10'
           run: 'TestScript.py'
