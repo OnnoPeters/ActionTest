@@ -1,6 +1,7 @@
 name: python_create_venv
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
   python_job:
