@@ -1,0 +1,16 @@
+name: python_create_venv
+
+on: [push]
+
+jobs:
+  python_job:
+    runs-on: ubuntu-latest
+    name: Python Venv Job
+    steps:
+      - uses: actions/checkout@v4
+      - id: CompositeAction
+        uses: actions/CompositeAction@v1
+        with:
+          python_version: '3.10'
+          run: 'TestScript.py'
+      - run: echo "Successfully completed"
